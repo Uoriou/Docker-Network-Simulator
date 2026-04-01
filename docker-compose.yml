@@ -1,0 +1,27 @@
+networks:
+  lab-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
+
+services:
+  station:
+    image: python:3.11
+    container_name: station
+    volumes:
+      - ./station:/workspace  # host folder
+    networks:
+      lab-network:
+        ipv4_address: 192.168.100.2
+    command: sleep infinity
+
+  tester:
+    image: python:3.11
+    container_name: tester
+    volumes:
+      - ./tester:/workspace  # host folder 
+    networks:
+      lab-network:
+        ipv4_address: 192.168.100.3
+    command: sleep infinity
