@@ -1,6 +1,6 @@
 # Docker Network Simulator
 
-A lightweight Docker-based environment that simulates a containerized network with two isolated nodes — **Station** and **Tester** — connected over a custom bridge network. Designed for experimenting docker inter-container communication.
+A lightweight Docker-based environment that simulates a containerized network with two isolated nodes — **Station** and **Tester** — connected over a custom bridge network. Designed for experimenting and learning the use cases of Docker and docker inter-container communication.
 
 ---
 
@@ -8,6 +8,8 @@ A lightweight Docker-based environment that simulates a containerized network wi
 
 * Python
 * Docker
+
+[![My Skills](https://skillicons.dev/icons?i=py,docker&perline=3)](https://skillicons.dev)
 
 ---
 
