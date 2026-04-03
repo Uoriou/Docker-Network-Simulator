@@ -4,6 +4,13 @@ A lightweight Docker-based environment that simulates a containerized network wi
 
 ---
 
+## Technology Used
+
+* Python
+* Docker
+
+---
+
 ## Project Overview
 
 This project sets up a self-contained network environment inside Docker using Docker Compose. Two containers are placed on a custom subnet and can communicate with each other using either their static IP addresses or container names (via Docker's built-in DNS).
