@@ -1,6 +1,6 @@
 # Docker Network Simulator
 
-A lightweight Docker-based lab environment that simulates a containerized network with two isolated nodes — **Station** and **Tester** — connected over a custom bridge network. Designed for experimenting with Python socket programming, networking concepts, and inter-container communication.
+A lightweight Docker-based environment that simulates a containerized network with two isolated nodes — **Station** and **Tester** — connected over a custom bridge network. Designed for experimenting docker inter-container communication.
 
 ---
 
@@ -15,7 +15,7 @@ The setup mirrors a typical networking lab environment where:
 
 ---
 
-## Architecture
+## Docker Architecture
 
 ```
 Host Computer
@@ -49,8 +49,8 @@ docker ps
 ### 3. Open a shell into either container
 
 ```bash
-docker exec -it station bash
-docker exec -it tester bash
+bash connectStation.sh
+bash connectTester.sh
 ```
 
 ### 4. Tear down
